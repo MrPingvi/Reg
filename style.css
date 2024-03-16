@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-image: url('https://media.discordapp.net/attachments/1160603698330861680/1216127472253276240/the-interior-has-a-armchair-on-empty-white-wall-background-3d-rendering_1.png?ex=65ff41f7&is=65ecccf7&hm=61b98432d2798d69a412e6474b56324f41319f5837d8f0af657c41e4a11d1abb&=&format=webp&quality=lossless&width=1195&height=672');
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background-size: cover;
+}
+
+.log{
+    position: absolute;
+width: 539px;
+height: 741px;
+right: 300px;
+top: 80px;
+border-radius: 40px;
+background: rgba(255, 255, 255, 0.75);
+padding: 44px;
+}
+.start{
+    display: flex;
+    justify-content: space-between;
+}
+.start>p{
+    width: 100px;
+}
+.start>h3{
+    font-family: Poppins;
+font-size: 21px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: left;
+}
+.start>h3>span,
+.start>p>a{
+    color: rgb(119, 147, 65);
+    text-decoration: none;
+}
+
+.log>h1{
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 83px;
+    letter-spacing: 0%;
+    text-align: left; 
+}
+.links{
+    display: flex;
+    gap: 20px;
+    margin-top:43px;
+}
+.links__gl>div{
+    display: flex;
+    gap: 21px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.links__gl{
+    display: flex;
+    padding: 15px 32px;
+    border-radius: 9px;
+background: rgb(233, 241, 255);
+width: 225px;
+}
+.links__gl>div>p{
+    color: rgb(66, 133, 244);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+.links>div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form>.email{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+form>.password{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap; 
+}
+form{
+    margin-top: 52px;
+}
+form>.email>input{
+box-sizing: border-box;
+border: 1px solid rgb(66, 133, 244);
+border-radius: 9px;
+background: rgb(255, 255, 255);
+width: 100%;
+height: 52px;
+margin-top: 13px;
+padding: 25px;
+}
+form>.password>input{
+    box-sizing: border-box;
+    border: 1px solid rgb(66, 133, 244);
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 52px;
+    margin-top: 13px;
+    padding: 25px;
+}
+form>.email>label{
+    color: rgb(0, 0, 0);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+.password{
+    margin-top: 38px;
+}
+form>.last>input{
+border-radius: 10px;
+box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.3);
+background: rgb(119, 147, 65);
+width: 236px;
+height: 54px;
+color: white;
+border: none;
+}
+form>.last{
+    display: flex;
+    flex-flow: column;
+align-items: end;
+gap: 44px;
+margin-top: 12px;
+
+}
+form>.last>a { 
+    text-decoration: none;
+   } 
+
+   @media screen  and (max-width:1240px ){
+    .log{
+        left:50%;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+}
+@media screen  and (max-width:630px ){
+    .log{
+        right: 0%;
+        left:0%;
+        top: 0%;
+        transform:translate(0%,0px) ;
+        width: 70% !important;
+        margin: 0 auto;
+        position: relative;
+        
+    }
+}
